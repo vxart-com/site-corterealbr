@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Corte Viral: O Momento da Verdade | Corte Real BR</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --verde: #009b3a;
+            --amarelo: #fedf00;
+            --azul: #002776;
+            --branco: #ffffff;
+            --preto: #0f0f0f;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Montserrat', sans-serif; }
+        body { line-height: 1.8; color: #eee; background-color: var(--preto); }
+
+        /* Menu Interno Estilo Dark */
+        nav {
+            padding: 15px 5%;
+            background: #1a1a1a;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            border-bottom: 2px solid var(--amarelo);
+        }
+        .nav-logo { font-weight: 900; color: var(--amarelo); font-size: 1.5rem; text-decoration: none; }
+        .back-link { color: white; text-decoration: none; font-weight: 700; font-size: 0.8rem; text-transform: uppercase; border: 1px solid #444; padding: 5px 15px; border-radius: 5px; transition: 0.3s; }
+        .back-link:hover { background: var(--amarelo); color: black; border-color: var(--amarelo); }
+
+        /* Estrutura do Post de Vídeo */
+        .container { max-width: 900px; margin: 40px auto; padding: 0 20px; }
+        
+        .article-header { text-align: center; margin-bottom: 40px; }
+        .category { color: var(--amarelo); font-weight: 900; text-transform: uppercase; font-size: 0.9rem; letter-spacing: 2px; }
+        
+        h1 { font-size: 3rem; color: #fff; line-height: 1.1; margin: 20px 0; font-weight: 900; }
+        
+        /* Placeholder para Vídeo */
+        .video-container { 
+            width: 100%; 
+            aspect-ratio: 16/9; 
+            background: #222; 
+            border-radius: 15px; 
+            margin-bottom: 30px; 
+            display: flex; 
+            align-items: center; 
+            justify-content: center;
+            border: 2px solid #333;
+            overflow: hidden;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.5);
+            position: relative;
+        }
+        .video-placeholder-text { color: #555; text-align: center; font-weight: 700; }
+        
+        .content { font-size: 1.2rem; text-align: justify; color: #ccc; max-width: 800px; margin: 0 auto; }
+        .content p { margin-bottom: 20px; }
+
+        .btn-youtube {
+            display: block;
+            width: fit-content;
+            margin: 40px auto;
+            padding: 15px 40px;
+            background: #ff0000;
+            color: white;
+            text-decoration: none;
+            font-weight: 900;
+            border-radius: 50px;
+            text-transform: uppercase;
+            transition: 0.3s;
+            box-shadow: 0 10px 20px rgba(255,0,0,0.2);
+        }
+        .btn-youtube:hover { transform: scale(1.05); box-shadow: 0 15px 30px rgba(255,0,0,0.4); }
+
+        footer { background: #000; color: #444; text-align: center; padding: 40px; margin-top: 60px; }
+
+        @media (max-width: 768px) {
+            h1 { font-size: 2.2rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="index.html" class="nav-logo">CRBR</a>
+        <a href="index.html" class="back-link">← Voltar</a>
+    </nav>
+
+    <article class="container">
+        <header class="article-header">
+            <span class="category">Cortes Oficiais</span>
+            <h1>O Vídeo que Brasília tentou esconder</h1>
+        </header>
+
+        <div class="video-container">
+            <div class="video-placeholder-text">
+                <p>O VÍDEO VIRAL DO DIA</p>
+                <small>Assista a análise completa no YouTube</small>
+            </div>
+        </div>
+
+        <div class="content">
+            <p>Este é o corte que está dominando as redes sociais hoje. Em menos de 10 minutos, nossa equipe desvenda as contradições dos discursos oficiais e traz à tona o anseio por um Brasil mais transparente.</p>
+
+            <p>O conteúdo aborda diretamente a força do povo brasileiro e a vontade de mudar o status quo. Se você busca entender o que acontece por trás das câmeras dos grandes jornais, este vídeo é obrigatório.</p>
+        </div>
+
+        <a href="https://youtube.com/@CorteRealBR" target="_blank" class="btn-youtube">Assistir no YouTube</a>
+    </article>
+
+    <footer>
+        CORTE REAL BR - Liberdade, Força e Vontade.
+    </footer>
+
+</body>
+</html>

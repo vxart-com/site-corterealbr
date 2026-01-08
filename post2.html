@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Política: Bastidores de Brasília | Corte Real BR</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --verde: #009b3a;
+            --amarelo: #fedf00;
+            --azul: #002776;
+            --branco: #ffffff;
+            --preto: #1a1a1a;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Montserrat', sans-serif; }
+        body { line-height: 1.8; color: #333; background-color: #fff; }
+
+        /* Menu Interno */
+        nav {
+            padding: 15px 5%;
+            background: var(--verde); /* Mudamos para verde para diferenciar da economia */
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        .nav-logo { font-weight: 900; color: white; font-size: 1.5rem; text-decoration: none; letter-spacing: 1px; }
+        .back-link { color: white; text-decoration: none; font-weight: 700; font-size: 0.8rem; text-transform: uppercase; border: 1px solid white; padding: 5px 15px; border-radius: 5px; transition: 0.3s; }
+        .back-link:hover { background: white; color: var(--verde); }
+
+        /* Estrutura da Notícia */
+        .container { max-width: 800px; margin: 40px auto; padding: 0 20px; }
+        
+        .article-header { border-bottom: 5px solid var(--azul); margin-bottom: 30px; padding-bottom: 20px; }
+        .category { background: var(--azul); color: white; padding: 4px 12px; font-size: 0.7rem; font-weight: 900; text-transform: uppercase; border-radius: 3px; }
+        
+        h1 { font-size: 2.8rem; color: var(--preto); line-height: 1.1; margin: 20px 0; font-weight: 900; }
+        .meta { color: #888; font-size: 0.9rem; font-style: italic; }
+
+        .featured-image { width: 100%; border-radius: 15px; margin-bottom: 30px; box-shadow: 0 15px 35px rgba(0,0,0,0.1); }
+
+        .content { font-size: 1.2rem; text-align: justify; color: #444; }
+        .content p { margin-bottom: 20px; }
+
+        .quote-box { 
+            background: var(--azul); 
+            color: white; 
+            padding: 35px; 
+            margin: 40px 0; 
+            border-radius: 0 30px 0 30px;
+            font-size: 1.2rem; 
+            font-weight: 500;
+            position: relative;
+        }
+        .quote-box::after {
+            content: "''";
+            position: absolute;
+            top: 10px;
+            right: 20px;
+            font-size: 4rem;
+            color: rgba(255,255,255,0.2);
+        }
+
+        footer { background: var(--preto); color: #777; text-align: center; padding: 40px; margin-top: 60px; font-weight: 600; }
+        footer span { color: var(--amarelo); }
+
+        @media (max-width: 768px) {
+            h1 { font-size: 2rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="index.html" class="nav-logo">CRBR</a>
+        <a href="index.html" class="back-link">← Voltar à Home</a>
+    </nav>
+
+    <article class="container">
+        <header class="article-header">
+            <span class="category">Bastidores de Brasília</span>
+            <h1>Reforma no Congresso: O que está em jogo para a nossa liberdade</h1>
+            <p class="meta">Escrito por Redação Corte Real BR em 08 de Janeiro de 2026</p>
+        </header>
+
+        <img src="https://images.unsplash.com/photo-1541872703-74c5e443d1fe?auto=format&fit=crop&q=80&w=1200" alt="Congresso Nacional" class="featured-image">
+
+        <div class="content">
+            <p>Enquanto muitos estão distraídos com as notícias superficiais da grande mídia, os corredores de Brasília fervem com movimentações que podem alterar profundamente os direitos individuais e a autonomia do cidadão brasileiro.</p>
+
+            <div class="quote-box">
+                "A política só serve ao povo quando é vigiada por ele. O nosso papel aqui é garantir que nenhuma decisão seja tomada nas sombras."
+            </div>
+
+            <p>A pauta do dia envolve a nova regulamentação de gastos públicos e as diretrizes de transparência para os próximos anos. Fontes ligadas aos bastidores indicam que há uma forte pressão para acelerar votações sem o devido debate com a sociedade civil.</p>
+
+            <p>No <strong>Corte Real BR</strong>, acreditamos que o anseio por um país melhor passa, obrigatoriamente, pela coragem de questionar e pela vontade de entender os mecanismos do poder. Continuaremos trazendo os detalhes que ninguém mais tem coragem de mostrar.</p>
+        </div>
+    </article>
+
+    <footer>
+        CORTE REAL <span>BR</span> &copy; 2026 - A verdade custe o que custar.
+    </footer>
+
+</body>
+</html>
