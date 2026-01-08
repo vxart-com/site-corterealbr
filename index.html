@@ -25,7 +25,7 @@
 
         html {
             scroll-behavior: smooth;
-            scroll-padding-top: 80px; /* Evita que o menu fixo cubra o título ao clicar */
+            scroll-padding-top: 80px; 
         }
 
         body { 
@@ -68,7 +68,7 @@
         }
         nav ul li a:hover { color: var(--verde); }
 
-        /* --- TICKER DE NOTÍCIAS (BARRA ROLANTE) --- */
+        /* --- TICKER DE NOTÍCIAS --- */
         .ticker {
             margin-top: 65px; 
             background: var(--preto-suave); 
@@ -142,10 +142,11 @@
         .card { 
             background: var(--branco); 
             border-radius: 15px; 
-            刻 overflow: hidden; 
+            overflow: hidden; 
             box-shadow: 0 10px 25px rgba(0,0,0,0.05); 
             transition: 0.4s; 
             border-bottom: 6px solid var(--verde); 
+            cursor: pointer; /* Indica que é clicável */
         }
         .card:hover { transform: translateY(-10px); box-shadow: 0 15px 35px rgba(0,0,0,0.15); }
         .card-img { height: 200px; background-size: cover; background-position: center; background-color: #ddd; }
@@ -181,7 +182,7 @@
             border-radius: 20px; 
             border-right: 10px solid var(--amarelo); 
         }
-        .sobre-box h3 { color: var(--amarelo); }
+        .sobre-box h3 { color: var(--amarelo); margin-bottom: 15px; }
 
         /* --- SEÇÃO CONTATO --- */
         #contato { padding: 80px 8%; background: var(--cinza-claro); }
@@ -194,7 +195,6 @@
         .footer-logo span { color: var(--amarelo); }
         .copyright { margin-top: 40px; padding-top: 20px; border-top: 1px solid #333; font-size: 0.8rem; color: #777; }
 
-        /* MOBILE */
         @media (max-width: 768px) {
             .hero h1 { font-size: 2.5rem; }
             nav ul { display: none; }
@@ -235,7 +235,7 @@
     <section id="economia" class="container">
         <h2 class="section-title" data-aos="fade-up">Economia</h2>
         <div class="grid-noticias">
-            <div class="card" data-aos="fade-up">
+            <div class="card" data-aos="fade-up" onclick="location.href='post1.html';">
                 <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?auto=format&fit=crop&q=80&w=400');"></div>
                 <div class="card-body">
                     <span class="tag tag-eco">Análise</span>
@@ -248,7 +248,7 @@
                 <div class="card-body">
                     <span class="tag tag-eco">Mercado</span>
                     <h3>Liberdade de Empreender</h3>
-                    <p>O crescimento das startups brasileiras e o desejo por menos burocracia estatal para gerar empregos.</p>
+                    <p>O crescimento das startups brasileiras e o desejo por menos burocracia estatal.</p>
                 </div>
             </div>
         </div>
@@ -258,7 +258,7 @@
         <div class="container">
             <h2 class="section-title" data-aos="fade-up">Política</h2>
             <div class="grid-noticias">
-                <div class="card" style="border-bottom-color: var(--azul);" data-aos="fade-right">
+                <div class="card" style="border-bottom-color: var(--azul);" data-aos="fade-right" onclick="location.href='post2.html';">
                     <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1541872703-74c5e443d1fe?auto=format&fit=crop&q=80&w=400');"></div>
                     <div class="card-body">
                         <span class="tag tag-pol">Brasília</span>
@@ -281,7 +281,7 @@
     <section id="cortes" class="container">
         <h2 class="section-title" data-aos="fade-up">Cortes em Destaque</h2>
         <div class="grid-noticias">
-            <div class="card" style="border-bottom-color: var(--amarelo);" data-aos="flip-left">
+            <div class="card" style="border-bottom-color: var(--amarelo);" data-aos="flip-left" onclick="location.href='post3.html';">
                 <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1478737270239-2f02b77fc618?auto=format&fit=crop&q=80&w=400');"></div>
                 <div class="card-body">
                     <span class="tag tag-cut">Vídeo</span>
