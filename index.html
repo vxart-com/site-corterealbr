@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Corte Real BR | Portal de Notícias</title>
     
+    <link rel="icon" type="image/png" href="favicon.png">
+    
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     
@@ -50,7 +52,7 @@
             text-transform: uppercase; letter-spacing: 0.5px; position: relative; transition: 0.3s;
         }
         .nav-item:hover { color: var(--verde); }
-        .yt-nav-icon { color: #ff0000; display: flex; align-items: center; text-decoration: none; transition: 0.3s; font-size: 1.2rem; }
+        .yt-nav-icon { color: #ff0000; display: flex; align-items: center; text-decoration: none; transition: 0.3s; }
         .yt-nav-icon:hover { transform: scale(1.1); }
         .nav-btn {
             text-decoration: none; background: var(--azul); color: #fff;
@@ -82,6 +84,7 @@
         .overlay { position: absolute; bottom: 0; left: 0; width: 100%; background: linear-gradient(transparent, rgba(0,0,0,0.95)); padding: 40px; color: white; }
         .overlay h1 { font-family: 'Playfair Display', serif; font-size: 2.5rem; margin-top: 10px; line-height: 1.1; }
 
+        /* Sidebar Alinhada */
         .sidebar { display: flex; flex-direction: column; gap: 20px; }
         .side-post { display: flex; align-items: center; gap: 15px; text-decoration: none; color: inherit; padding-bottom: 15px; border-bottom: 1px solid #eee; }
         .side-img-box { width: 100px; height: 75px; flex-shrink: 0; border-radius: 6px; overflow: hidden; }
@@ -173,6 +176,10 @@
                     <div class="side-img-box"><img src="https://images.pexels.com/photos/4673433/pexels-photo-4673433.jpeg?auto=compress&cs=tinysrgb&w=400"></div>
                     <div class="side-info"><span style="color:var(--verde); font-size:0.6rem; font-weight:900;">FUTEBOL</span><h4>O mercado da bola agita a temporada.</h4></div>
                 </a>
+                <a href="#" class="side-post">
+                    <div class="side-img-box"><img src="https://images.pexels.com/photos/1181395/pexels-photo-1181395.jpeg?auto=compress&cs=tinysrgb&w=400"></div>
+                    <div class="side-info"><span style="color:#6a0dad; font-size:0.6rem; font-weight:900;">IDEIAS</span><h4>O futuro da liberdade na era da IA.</h4></div>
+                </a>
             </aside>
         </section>
     </main>
@@ -185,6 +192,7 @@
             <span style="background: var(--azul); color: var(--amarelo); padding: 5px 15px; border-radius: 4px; font-size: 0.7rem; font-weight: 900; text-transform: uppercase; letter-spacing: 3px;">Editorial</span>
             <h2 style="font-family: 'Playfair Display', serif; font-size: clamp(2rem, 5vw, 3.5rem); color: var(--azul); margin: 25px 0; font-weight: 900;">Informação é <span style="color:var(--verde)">Poder</span>. A Verdade é <span style="border-bottom: 5px solid var(--amarelo)">Dever</span>.</h2>
             <p style="font-size: 1.1rem; color: #555; max-width: 700px; margin: 0 auto 40px;">O Corte Real BR é a sentinela independente que filtra o ruído e entrega a verdade nua e crua dos bastidores do poder.</p>
+            <div style="width: 50px; height: 3px; background: var(--verde); margin: 0 auto;"></div>
         </div>
     </section>
 
@@ -210,9 +218,7 @@
             </div>
             <div>
                 <h4 style="font-weight: 900; margin-bottom: 20px; font-size: 0.85rem; text-transform: uppercase;">Contato</h4>
-                <p style="font-size: 0.85rem; opacity: 0.7; margin-bottom: 15px;">
-                    <i class="fas fa-envelope"></i> denuncias@corterealbr.com.br
-                </p>
+                <p style="font-size: 0.85rem; opacity: 0.7; margin-bottom: 15px;"><i class="fas fa-envelope"></i> denuncias@corterealbr.com.br</p>
                 <a href="contato.html" class="nav-btn" style="background:var(--verde); display:inline-block;">FALE CONOSCO</a>
             </div>
         </div>
